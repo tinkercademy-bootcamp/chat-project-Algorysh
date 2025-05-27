@@ -33,7 +33,7 @@
   - It is very dense and written for advanced users so we can use this for understanding precise rules. For most learners, books and other resources are more approachable.
 - Can the various implementations of C++ compilers be different from the
   C++ standard?
-- What are the most widely used and most significant C++ compilers?
+  - Yes, it can be different. While all major compilers aim to conform to the standard, there may be differences due to incomplete implementation of new features, compiler-specific extensions, additional features or bugs.
 - Where is the equivalent spec for C++26?
 
 - Where do you find the spec for the HTTP protocol?
