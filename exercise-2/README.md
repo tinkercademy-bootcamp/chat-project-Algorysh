@@ -28,6 +28,7 @@
 - Is the above the official C++23 spec? 
   - No, it's not the official C++23 spec, the final, officially ratified C++23 standard is ISO/IEC 14882:2024. The standardization process involves multiple working drafts and these drafts are used to refine the language and library features before the final standard is published.
 - Why was this link chosen instead?
+  - This link was chosen because it was free and publicly available and it closely matches the final standard.
 - Is this a helpful reference for learning C++?
 - Can the various implementations of C++ compilers be different from the
   C++ standard?
