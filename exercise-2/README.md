@@ -30,6 +30,7 @@
 - Why was this link chosen instead?
   - This link was chosen because it was free and publicly available and it closely matches the final standard.
 - Is this a helpful reference for learning C++?
+  - It is very dense and written for advanced users so we can use this for understanding precise rules. For most learners, books and other resources are more approachable.
 - Can the various implementations of C++ compilers be different from the
   C++ standard?
 - What are the most widely used and most significant C++ compilers?
