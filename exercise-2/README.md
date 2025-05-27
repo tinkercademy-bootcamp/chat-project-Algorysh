@@ -12,6 +12,7 @@
   overview and protocol families
 - Or type `man 7 socket` in terminal
 - When would you want to use a `SOCK_RAW` stream?
+  We’d use a `SOCK_RAW` socket when we need low-level control over network communication. For example, if we want to build a tool like ping (which uses ICMP), a packet sniffer like tcpdump, or testing a custom protocol, raw sockets let us directly access and construct the packets ourselves. It’s powerful, but risky, so it's mostly used for things like diagnostics, monitoring, or security tools, and usually only by users with root access.
 
 ### TCP and IP Protocols
 - [IPv4](https://www.rfc-editor.org/info/rfc791) - Internet Protocol 
