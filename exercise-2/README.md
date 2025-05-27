@@ -42,6 +42,7 @@
   - **MSVC (Microsoft Visual C++):**
   - **Intel C++ Compiler (ICC/ICX):**
 - Where is the equivalent spec for C++26?
+  - It's still under development. The latest working drafts and proposals are on the [ISO C++ committee papers page](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/).
 - Where do you find the spec for the HTTP protocol?
 - What about HTTPS? Is there a spec for that protocol?
 
