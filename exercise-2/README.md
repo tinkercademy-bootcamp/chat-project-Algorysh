@@ -44,6 +44,7 @@
 - Where is the equivalent spec for C++26?
   - It's still under development. The latest working drafts and proposals are on the [ISO C++ committee papers page](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/).
 - Where do you find the spec for the HTTP protocol?
+  - The official HTTP specifications (like HTTP/1.1, HTTP/2, and HTTP/3) are on the IETF’s website as RFC documents — for example, [RFC 9112](https://datatracker.ietf.org/doc/html/rfc9112) for HTTP/1.1.
 - What about HTTPS? Is there a spec for that protocol?
 
 ## Introduction to C++ and Sockets Programming
