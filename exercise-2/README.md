@@ -54,6 +54,8 @@
 - Are there any bugs in this code? 
   - No.
 - What can you do to identify if there are bugs in the code?
+  - We can run the code and see if any error shows, if not then try running it with a testcases with expected output. also try to read through the code to see if there is any bug.
+  - To see what the bug is, we can use tools like gdb, lldb (for LLVM/Clang), valgrind.
 
 ## Refactoring: Extract Function
 
