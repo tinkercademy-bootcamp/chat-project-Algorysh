@@ -46,6 +46,7 @@
 - Where do you find the spec for the HTTP protocol?
   - The official HTTP specifications (like HTTP/1.1, HTTP/2, and HTTP/3) are on the IETF’s website as RFC documents — for example, [RFC 9112](https://datatracker.ietf.org/doc/html/rfc9112) for HTTP/1.1.
 - What about HTTPS? Is there a spec for that protocol?
+  - HTTPS is just HTTP layered over TLS. So, we have to look at both the HTTP RFCs and the [TLS spec](https://datatracker.ietf.org/doc/html/rfc8446), such as RFC 8446 for TLS 1.3.
 
 ## Introduction to C++ and Sockets Programming
 
