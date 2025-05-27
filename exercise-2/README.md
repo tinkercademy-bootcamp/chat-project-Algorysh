@@ -27,15 +27,16 @@
   Working draft of the C++ language specification
 - Is the above the official C++23 spec? 
   - No, it's not the official C++23 spec, the final, officially ratified C++23 standard is ISO/IEC 14882:2024. The standardization process involves multiple working drafts and these drafts are used to refine the language and library features before the final standard is published.
-- Why was this link chosen instead?
+- Where is the official C++23 spec?
+  - The official C++23 spec is published as ISO/IEC 14882:2024 by ISO, and it's at [ISO website](https://www.iso.org/standard/79358.html).
   - This link was chosen because it was free and publicly available and it closely matches the final standard.
 - Is this a helpful reference for learning C++?
   - It is very dense and written for advanced users so we can use this for understanding precise rules. For most learners, books and other resources are more approachable.
 - Can the various implementations of C++ compilers be different from the
   C++ standard?
   - Yes, it can be different. While all major compilers aim to conform to the standard, there may be differences due to incomplete implementation of new features, compiler-specific extensions, additional features or bugs.
+- What are the most widely used and most significant C++ compilers?
 - Where is the equivalent spec for C++26?
-
 - Where do you find the spec for the HTTP protocol?
 - What about HTTPS? Is there a spec for that protocol?
 
