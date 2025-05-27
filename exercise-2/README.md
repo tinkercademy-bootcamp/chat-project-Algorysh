@@ -36,6 +36,11 @@
   C++ standard?
   - Yes, it can be different. While all major compilers aim to conform to the standard, there may be differences due to incomplete implementation of new features, compiler-specific extensions, additional features or bugs.
 - What are the most widely used and most significant C++ compilers?
+  The most widely used and significant C++ compilers are:
+  - **GCC (GNU Compiler Collection):**
+  - **Clang/LLVM:**
+  - **MSVC (Microsoft Visual C++):**
+  - **Intel C++ Compiler (ICC/ICX):**
 - Where is the equivalent spec for C++26?
 - Where do you find the spec for the HTTP protocol?
 - What about HTTPS? Is there a spec for that protocol?
