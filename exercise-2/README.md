@@ -26,7 +26,7 @@
 - [C++23 ISO standard draft](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2023/n4950.pdf) - 
   Working draft of the C++ language specification
 - Is the above the official C++23 spec? 
-- Where is the official C++23 spec?
+  - No, it's not the official C++23 spec, the final, officially ratified C++23 standard is ISO/IEC 14882:2024. The standardization process involves multiple working drafts and these drafts are used to refine the language and library features before the final standard is published.
 - Why was this link chosen instead?
 - Is this a helpful reference for learning C++?
 - Can the various implementations of C++ compilers be different from the
