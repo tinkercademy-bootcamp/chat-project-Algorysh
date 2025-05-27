@@ -52,6 +52,7 @@
 
 - Read the code in `src/`
 - Are there any bugs in this code? 
+  - No.
 - What can you do to identify if there are bugs in the code?
 
 ## Refactoring: Extract Function
