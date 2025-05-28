@@ -6,6 +6,13 @@
 
 const int kBufferSize = 1024;
 
+void check_error(bool test, std::string error_message) {
+  if (test) {
+    std::cerr << error_message << "\n";
+    exit(EXIT_FAILURE);
+  }
+}
+
 int create_socket() {
   int my_sock;
   if ((my_sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
