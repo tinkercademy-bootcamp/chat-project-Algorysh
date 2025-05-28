@@ -73,6 +73,7 @@
 - Does writing code this way have any impact on performance?
   - It can have a minor impact on the performance due to multiple function calls.
 - What do we mean when we say performance?
+  - Performance depends on how fast the code runs and how much memory it's using.
 - How do we measure performance in a program?
 
 ## Play with Git
