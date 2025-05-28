@@ -107,3 +107,4 @@
 - How do you see the memory layout of a `std::string` from your IDE debug mode?
   - Set a breakpoint after the string is created, then in the watch panel, expand that string, and then memory layout will be visible.
 - How do you see the memory layout of a struct from your IDE debug mode?
+  - Similar to `std::string`, set a breakpoint after strcut is initialized, then in watch panel, expand that struct.
