@@ -1,5 +1,6 @@
 CXX := g++
-CXXFLAGS := -O2 -std=c++23 -S
+CXXFLAGS := -O2 -std=c++23 -fsanitize=address -S
+LDFLAGS := -fsanitize=address
 
 SRC_DIR := src
 BUILD_DIR := build
