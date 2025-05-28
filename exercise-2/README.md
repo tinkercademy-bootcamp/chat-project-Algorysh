@@ -66,6 +66,7 @@
 - What are the tradeoffs compared to exercise-1?
   - In exercise-2, the code gets longer and there is an increased complexity due to jumping through various function (but this is negligible). It may be harder for a newbie to keep track of the code due to a lot of jumping through functions.
 - Are you able to spot any mistakes or inconsistencies in the changes?
+  - The error messages can be more descriptive as to why that error occurred.
 
 ## Thinking About Performance
 
