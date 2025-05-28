@@ -12,6 +12,8 @@
   - It makes the code cleaner and easier to read.
   - If any logic change occurs then we won't have to chaange at all places.
 - Are there any costs to writing code like this?
+  - Increased time complexity due to multiple function calls (negligible effect).
+  - Can be harder to keep track of all the sequential function calls.
 - Apply `check_error` to all the code in `src/`
 
 ## Introduction to Compiler Explorer
