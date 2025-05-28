@@ -50,6 +50,7 @@
 - Where is the text in your `std::string`?
   - Dynamically allocated on the heap.
 - What is `std::optional`?
+  - It's a wrapper that may or may not contain a value.
 - How do you find out the memory layout of a `std::optional`?
 - Read https://en.cppreference.com/w/cpp/memory#Smart_pointers - Guide to 
   modern C++ memory management using smart pointers
