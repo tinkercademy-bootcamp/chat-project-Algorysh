@@ -27,6 +27,7 @@
   - It happened because of creating a temporary std::string object so in the arguments if we use `const char *` then the assembly code would not be this much longer.
 - How can you modify your Makefile to generate assembly code instead of
   compiled code?
+  - Using the flag `-S` and having the extension as `.s`.
 - **Note**: You can save the generated assembly from Compiler Explorer
 - **Bonus**: Can you view assembly code using your IDE?
 - **Bonus**: How do you see the assembly when you step through each line in
