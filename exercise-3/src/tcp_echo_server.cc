@@ -14,11 +14,8 @@ void check_error(bool test, std::string error_message) {
 }
 
 int create_socket() {
-  int my_sock;
-  if ((my_sock = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
-    std::cerr << "Socket creation error\n";
-    exit(EXIT_FAILURE);
-  }
+  int my_sock = socket(AF_INET, SOCK_STREAM, 0);
+  check_error(my_sock < 0, "Socket creation error\n");
   return my_sock;
 }
 
