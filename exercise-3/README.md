@@ -22,6 +22,7 @@
   `create_socket()` in [Compiler Explorer](https://godbolt.org) - Interactive 
   tool for exploring how C++ code compiles to assembly
 - What is happening here?
+  - The assemble code for the second case is longer than the first case because it creates a temporary std::string object from a string literal for the function call.
 - Can you think of any different approaches to this problem?
 - How can you modify your Makefile to generate assembly code instead of
   compiled code?
