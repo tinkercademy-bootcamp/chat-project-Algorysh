@@ -1,13 +1,25 @@
-all: build/server.s build/client.s
+CXX := g++
+CXXFLAGS := -std=c++23 -Wall -Wextra -S
 
-build/server.s: src/tcp_echo_server.cc | build
-	g++ -o build/server.s -S src/tcp_echo_server.cc
+SRC_DIR := src
+BUILD_DIR := build
 
-build/client.s: src/tcp_echo_client.cc | build
-	g++ -o build/client.s -S src/tcp_echo_client.cc
+SERVER_SRC := $(SRC_DIR)/tcp_echo_server.cc
+CLIENT_SRC := $(SRC_DIR)/tcp_echo_client.cc
 
-build:
-	mkdir -p build
-	
+SERVER_ASM := $(BUILD_DIR)/server.s
+CLIENT_ASM := $(BUILD_DIR)/client.s
+
+all: $(SERVER_ASM) $(CLIENT_ASM)
+
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
+
+$(SERVER_ASM): $(SERVER_SRC) | $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) $< -o $@
+
+$(CLIENT_ASM): $(CLIENT_SRC) | $(BUILD_DIR)
+	$(CXX) $(CXXFLAGS) $< -o $@
+
 clean:
-	rm -rf build
+	rm -rf $(BUILD_DIR)
