@@ -24,6 +24,7 @@
 - What is happening here?
   - The assemble code for the second case is longer than the first case because it creates a temporary std::string object from a string literal for the function call.
 - Can you think of any different approaches to this problem?
+  - It happened because of creating a temporary std::string object so in the arguments if we use char * then the assembly code would not be this much longer.
 - How can you modify your Makefile to generate assembly code instead of
   compiled code?
 - **Note**: You can save the generated assembly from Compiler Explorer
