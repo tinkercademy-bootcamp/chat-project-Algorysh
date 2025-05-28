@@ -89,6 +89,7 @@ int main() {
   sockaddr_in address = create_address(kPort);
 
   // #Task - is there a better name for this function?
+  // This is a good name, but it could be more descriptive, like `setup_listening_socket` or `bind_and_listen_socket` which will describe the functionality more.
   start_listening_on_socket(my_socket, address);
   std::cout << "Server listening on port " << kPort << "\n";
   handle_connections(my_socket, kPort);
