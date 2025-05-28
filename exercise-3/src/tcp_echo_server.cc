@@ -55,15 +55,13 @@ void start_listening_on_socket(int my_socket, sockaddr_in &address) {
 void handle_accept(int client_socket) {
   char buffer[kBufferSize] = {0};
   ssize_t valread = read(client_socket, buffer, kBufferSize);
-
+  check_error(valread < 0, "Read error on client socket" + std::to_string(client_socket) + "\n");
   if (valread > 0) {
     std::cout << "Received: " << buffer << "\n";
     send(client_socket, buffer, valread, 0);
     std::cout << "Echo message sent\n";
   } else if (valread == 0) {
     std::cout << "Client disconnected.\n";
-  } else {
-    std::cerr << "Read error on client socket " << client_socket << "\n";
   }
   close(client_socket);
 }
