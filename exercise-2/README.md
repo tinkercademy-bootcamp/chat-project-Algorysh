@@ -86,15 +86,21 @@
 - Make sure to commit each change as small and self-contained commit
 - This will make it easier to revert your code if you need to
 - What is `git tag`? How is `git tag` different from `git branch`?
+  - `git tag` is used to mark an important event, usually a release, which we might want to refer to later. `git tag` marks a specific point in history while `git branch` creates a movable line of development.
 - How can you use `git tag` and `git branch` to make programming easier and
   more fun?
+  - we can use `git branch` to try things out and experiment with it, or we can use `git tag` to mark the known-good code and then try things out.
 
 ## Learn Basics of Debugging in Your IDE
 
 - How do you enable debug mode in your IDE?
+  - Press F5 to enable debug mode.
 - In debug mode, how do you add a watch?
+  - In watch panel, add the variable you want to watch.
 - In debug mode, how do you add a breakpoint?
+  - Click on the left of the line you want to add breakpoint on.
 - In debug mode, how do you step through code?
+  - Use buttons like Step Over (F10), Step Into (F11), and Step Out (Shift+F11) to move through your code line by line.
 
 ### Memory Management and Debug Mode in Your IDE
 
