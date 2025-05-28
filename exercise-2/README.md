@@ -52,9 +52,9 @@
 
 - Read the code in `src/`
 - Are there any bugs in this code? 
-  - No.
+  - Nobugs are found after reviewing and testing.
 - What can you do to identify if there are bugs in the code?
-  - We can run the code and see if any error shows, if not then try running it with a testcases with expected output. also try to read through the code to see if there is any bug.
+  - We can run the code and see if any error shows, if not then try running it with test cases and compare with expected output. Also try to read through the code to see if there is any bug.
   - To see what the bug is, we can use tools like gdb, lldb (for LLVM/Clang), valgrind.
 
 ## Refactoring: Extract Function
@@ -64,9 +64,9 @@
 - Is this code better or worse than exercise-1?
   - This code is better than exercise-1 as this is modular and easier to read and it's a good practice to use functions rather than writing all the logic in `main`.
 - What are the tradeoffs compared to exercise-1?
-  - In exercise-2, the code gets longer and there is an increased complexity due to jumping through various function (but this is negligible). It may be harder for a newbiew to keep track of the code due to a lot of jumping through functions.
+  - In exercise-2, the code gets longer and there is an increased complexity due to jumping through various function (but this is negligible). It may be harder for a newbie to keep track of the code due to a lot of jumping through functions.
 - Are you able to spot any mistakes or inconsistencies in the changes?
-  
+
 ## Thinking About Performance
 
 - Does writing code this way have any impact on performance?
