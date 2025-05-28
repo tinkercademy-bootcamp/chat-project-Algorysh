@@ -46,6 +46,7 @@
 - With the new tool of the Compiler Explorer, and keeping in mind what you 
   have learned about how to use debug mode
 - What happens when you look at a `std::string` using the above methods?
+  - A std::string object is not just a raw character array, it's a class with members like a pointer to the actual character buffer, size and capacity.
 - Where is the text in your `std::string`?
 - What is `std::optional`?
 - How do you find out the memory layout of a `std::optional`?
