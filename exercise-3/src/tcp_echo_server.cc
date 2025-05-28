@@ -71,6 +71,7 @@ void handle_connections(int sock, int port) {
   socklen_t address_size = sizeof(address);
 
   // #Task - is it good to have an infinite loop?
+  // Here, infinite loop is used to continuously accept new connections, but there should be a way to exit the server.
   while (true) {
     int accepted_socket = accept(sock, (sockaddr *)&address, &address_size);
     if (accepted_socket < 0) {
