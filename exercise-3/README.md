@@ -48,6 +48,7 @@
 - What happens when you look at a `std::string` using the above methods?
   - A std::string object is not just a raw character array, it's a class with members like a pointer to the actual character buffer, size and capacity.
 - Where is the text in your `std::string`?
+  - Dynamically allocated on the heap.
 - What is `std::optional`?
 - How do you find out the memory layout of a `std::optional`?
 - Read https://en.cppreference.com/w/cpp/memory#Smart_pointers - Guide to 
