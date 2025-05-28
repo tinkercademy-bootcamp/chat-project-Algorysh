@@ -62,6 +62,7 @@
 - What is different in this code compared to exercise-1?
   - In this code, we are using helper functions, instead of having all the logic in `main` which makes the code modular and easier to read.
 - Is this code better or worse than exercise-1?
+  - This code is better than exercise-1 as this is modular and easier to read and it's a good practice to use functions rather than writing all the logic in `main`.
 - What are the tradeoffs compared to exercise-1?
 - Are you able to spot any mistakes or inconsistencies in the changes?
   
