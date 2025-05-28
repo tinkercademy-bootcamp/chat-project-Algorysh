@@ -64,13 +64,14 @@
 - Is this code better or worse than exercise-1?
   - This code is better than exercise-1 as this is modular and easier to read and it's a good practice to use functions rather than writing all the logic in `main`.
 - What are the tradeoffs compared to exercise-1?
-  - In exercise-2, the code gets longer and there is an increased complexity due to jumping through various function (but this is negligible). It may be harder for a newbie to keep track of the code due to a lot of jumping through functions.
+  - In exercise-2, the code gets longer and there is an increased complexity due to multiple function calls (but this is negligible). It may be harder for a newbie to keep track of the code due to a lot of jumping through functions.
 - Are you able to spot any mistakes or inconsistencies in the changes?
   - The error messages can be more descriptive as to why that error occurred.
 
 ## Thinking About Performance
 
 - Does writing code this way have any impact on performance?
+  - It can have a minor impact on the performance due to multiple function calls.
 - What do we mean when we say performance?
 - How do we measure performance in a program?
 
