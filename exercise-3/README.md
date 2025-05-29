@@ -56,7 +56,9 @@
 - Read https://en.cppreference.com/w/cpp/memory#Smart_pointers - Guide to 
   modern C++ memory management using smart pointers
 - Which pointer types are the most important to know about?
+  - `unique_ptr`, `shared_ptr`, and `weak_ptr`.
 - Which smart pointer should you use by default if you can?
+  - `unique_ptr` because 
 - Does changing your optimization level in `CXXFLAGS` from `-O0` to `-O3` have
   any impact on the answers to any of the above questions?
 
