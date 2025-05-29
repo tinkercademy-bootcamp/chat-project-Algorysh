@@ -61,6 +61,7 @@
   - `unique_ptr` because 
 - Does changing your optimization level in `CXXFLAGS` from `-O0` to `-O3` have
   any impact on the answers to any of the above questions?
+    - Changing the optimization from `-O0` (no optimization) to `-O3` (maximum optimization) reduces the assembly code (by ~10%) by inlining codes, however in the first case, it will still be shorter than the second.
 
 ## More Thinking About Performance
 
