@@ -67,6 +67,7 @@
 
 - After your experiments with Compiler Explorer, do you have any updates for
   your answers in exercise-2?
+  - With the help of optimization, we can safely assume that creating many functions will not have a great impact on the performance and use functions whenever possible.
 
 ### Bonus: Do Not Watch Now 
 
