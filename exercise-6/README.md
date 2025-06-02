@@ -55,7 +55,8 @@
   - Include files: `/usr/include`, `/usr/local/include`, `/usr/lib/gcc/aarch64-linux-gnu/14/include`  (or path included by `-I`)
   - Library files: `/usr/lib` (or path included by `-L`)
 - How do you find out?
-  - 
+  - Include files: `echo '' | g++ -v -x c++ -E -`
+  - Library files: `g++ -print-search-dirs`
 
 ## C++ Package Managers
 
