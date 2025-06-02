@@ -11,6 +11,9 @@
 - How do you compile this file using the `g++` CLI?
   - g++ -std=c++17 -I/usr/include/spdlog spdlog-hello-world-main.cc -lspdlog -lfmt -o spdlog
 - What do you need to change in your makefile to use this library?
+  - Add `LIBS = -lspdlog` to link against the library
+  - Add `INC_DIRS += /usr/include/spdlog` for include path
+  - Update target dependencies to include the library (add `$(LIBS)` at the end)
 - How many different ways can this library be added into your project?
 - What are the tradeoffs in the different ways?
 - Why are there so many different ways to do it?
