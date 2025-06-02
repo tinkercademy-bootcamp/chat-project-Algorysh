@@ -19,11 +19,13 @@
   - Git submodule in your project
   - Copying source files directly into project
   - Using a package manager like Conan or vcpkg
+  - Using CMake’s FetchContent to download it during the build
 - What are the tradeoffs in the different ways?
   - System-wide: Easy to set up, but version control is harder
   - Git submodule: Better version control, but increases repo size
   - Source files: Complete control, but harder to update
   - Package manager: Best practice, but adds complexity
+  - FetchContent (CMake): Automatic download + build, but requires CMake, may increase build time
 - Why are there so many different ways to do it?
   - Different projects have different needs
   - Historical reasons and C++ ecosystem evolution
