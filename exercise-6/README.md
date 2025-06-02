@@ -70,3 +70,7 @@
   - vcpkg: Microsoft-backed, good Windows support
   - Hunter: CMake-focused
 - Which are the most notable ways to manage the compilation of C++ projects?
+  - CMake: Most popular, cross-platform
+  - Make: Traditional, widely used
+  - Bazel: Google's build system
+  - Meson: Modern, fast builds
