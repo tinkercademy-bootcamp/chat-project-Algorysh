@@ -52,6 +52,8 @@
 ## Git Clone and Building from Source
 
 - Where is `g++` looking for the include files and library files?
+  - Include files: `/usr/include`, `/usr/local/include`
+  - Library files: `/usr/lib`, `/usr/local/lib`
 - How do you find out?
 
 ## C++ Package Managers
