@@ -10,6 +10,7 @@ CXX_DEBUG_FLAGS :=-g3 -ggdb3
 CXX_RELEASE_FLAGS :=-O3
 
 CXXFLAGS += $(CXX_DEBUG_FLAGS)
+LIBS = -lspdlog -lfmt
 
 # The linker flags. These are passed to the linker when we link our object files together.
 LDFLAGS := -fsanitize=address
@@ -33,6 +34,7 @@ DEPS := $(OBJS:.o=.d)
 
 # Every folder in ./src will need to be passed to GCC so that it can find header files
 INC_DIRS := $(shell find $(SRC_DIR) -type d)
+INC_DIRS += /usr/include/spdlog
 # Add a prefix to INC_DIRS. So moduleA would become -ImoduleA. GCC understands this -I flag
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 
@@ -44,14 +46,14 @@ CPPFLAGS := $(INC_FLAGS) -MMD -MP
 all: $(BUILD_DIR)/server $(BUILD_DIR)/client
 	
 $(BUILD_DIR)/server: $(BUILD_DIR)/src/server-main.cc.o $(NON_MAIN_OBJS)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $(BUILD_DIR)/src/server-main.cc.o $(NON_MAIN_OBJS) -o $(BUILD_DIR)/server $(LDFLAGS)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $(BUILD_DIR)/src/server-main.cc.o $(NON_MAIN_OBJS) -o $(BUILD_DIR)/server $(LDFLAGS) $(LIBS)
 
 $(BUILD_DIR)/client: $(BUILD_DIR)/src/client-main.cc.o $(NON_MAIN_OBJS)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $(BUILD_DIR)/src/client-main.cc.o $(NON_MAIN_OBJS) -o $(BUILD_DIR)/client $(LDFLAGS)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $(BUILD_DIR)/src/client-main.cc.o $(NON_MAIN_OBJS) -o $(BUILD_DIR)/client $(LDFLAGS) $(LIBS)
 
 $(BUILD_DIR)/%.cc.o: %.cc
 	mkdir -p $(dir $@)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@ $(LIBS)
 
 .PHONY: print-vars
 print-vars:
