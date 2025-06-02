@@ -52,9 +52,10 @@
 ## Git Clone and Building from Source
 
 - Where is `g++` looking for the include files and library files?
-  - Include files: `/usr/include`, `/usr/local/include` (or path included by `-I`)
-  - Library files: `/usr/lib`, `/usr/local/lib` (or path included by `-L`)
+  - Include files: `/usr/include`, `/usr/local/include`, `/usr/lib/gcc/aarch64-linux-gnu/14/include`  (or path included by `-I`)
+  - Library files: `/usr/lib` (or path included by `-L`)
 - How do you find out?
+  - 
 
 ## C++ Package Managers
 
