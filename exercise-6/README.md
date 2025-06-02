@@ -65,4 +65,8 @@
   - Different platforms have different needs.
   - Historical fragmentation in C++ ecosystem
 - Which one is the best one?
+  - Depends on needs, but popular choices are:
+  - Conan: Mature, good community support
+  - vcpkg: Microsoft-backed, good Windows support
+  - Hunter: CMake-focused
 - Which are the most notable ways to manage the compilation of C++ projects?
