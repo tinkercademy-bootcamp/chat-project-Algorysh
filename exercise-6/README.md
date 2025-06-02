@@ -25,6 +25,9 @@
   - Source files: Complete control, but harder to update
   - Package manager: Best practice, but adds complexity
 - Why are there so many different ways to do it?
+  - Different projects have different needs
+  - Historical reasons and C++ ecosystem evolution
+  - Trade-offs between ease of use and control
   
 ## Static Linking vs Dynamic Linking
 
