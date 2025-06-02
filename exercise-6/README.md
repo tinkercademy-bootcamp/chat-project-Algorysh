@@ -35,6 +35,10 @@
   - Static: Library code is copied into executable
   - Dynamic: Library is loaded at runtime
 - What are the tradeoffs?
+  - Static: Larger executable but self-contained
+  - Dynamic: Smaller executable but needs library present
+  - Static: Better portability
+  - Dynamic: Saves system memory when multiple programs use same library
 - How do you enable static linking or dynamic linking in your makefile?
 
 ## Git Clone and Building from Source
