@@ -16,13 +16,13 @@ void check_error(bool test, std::string error_message) {
 
 int create_socket() {
   int sock = socket(AF_INET, SOCK_STREAM, 0);
-  check_error(sock < 0, "Socket creation error\n");
+  check_error(sock < 0, "Socket creation error");
   return sock;
 }
 
 void set_binary_address(sockaddr_in &address, const std::string &server_ip) {
   auto err_code = inet_pton(AF_INET, server_ip.c_str(), &address.sin_addr);
-  check_error(err_code <= 0, "Invalid address/ Address not supported\n");
+  check_error(err_code <= 0, "Invalid address/ Address not supported");
 }
 
 sockaddr_in create_address(const std::string &server_ip, int port) {
@@ -37,7 +37,7 @@ sockaddr_in create_address(const std::string &server_ip, int port) {
 void connect_to_server(int sock, sockaddr_in &server_address) {
   auto err_code =
       connect(sock, (sockaddr *)&server_address, sizeof(server_address));
-  check_error(err_code < 0, "Connection Failed\n");
+  check_error(err_code < 0, "Connection Failed");
 }
 
 void send_and_receive_message(int sock, const std::string &message) {
@@ -50,12 +50,11 @@ void send_and_receive_message(int sock, const std::string &message) {
 
   // Receive response from the server
   ssize_t read_size = read(sock, buffer, kBufferSize);
+  check_error(read_size < 0, "Read error");
   if (read_size > 0) {
     std::cout << "Received: " << buffer << "\n";
   } else if (read_size == 0) {
     std::cout << "Server closed connection.\n";
-  } else {
-    std::cerr << "Read error\n";
   }
 }
 

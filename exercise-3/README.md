@@ -8,7 +8,12 @@
 - A new function `check_error()` has been created and `create_socket()` from 
   exercise-2 has been refactored to make use of it
 - What are the benefits of writing code in this way?
+  - We won't have to write the same code again and again.
+  - It makes the code cleaner and easier to read.
+  - If any logic change occurs then we won't have to chaange at all places.
 - Are there any costs to writing code like this?
+  - Increased time complexity due to multiple function calls (negligible effect).
+  - Can be harder to keep track of all the sequential function calls.
 - Apply `check_error` to all the code in `src/`
 
 ## Introduction to Compiler Explorer
@@ -17,9 +22,12 @@
   `create_socket()` in [Compiler Explorer](https://godbolt.org) - Interactive 
   tool for exploring how C++ code compiles to assembly
 - What is happening here?
+  - The assemble code for the second case is longer than the first case because it creates a temporary std::string object from a string literal for the function call.
 - Can you think of any different approaches to this problem?
+  - It happened because of creating a temporary std::string object so in the arguments if we use `const char *` then the assembly code would not be this much longer.
 - How can you modify your Makefile to generate assembly code instead of
   compiled code?
+  - Using the flag `-S` and having the extension as `.s`.
 - **Note**: You can save the generated assembly from Compiler Explorer
 - **Bonus**: Can you view assembly code using your IDE?
 - **Bonus**: How do you see the assembly when you step through each line in
@@ -32,23 +40,34 @@
 - Make sure you have `-fsanitize=address` in both your `CXX_FLAGS` and 
   `LD_FLAGS` in your Makefile
 - What do `-fsanitize=address`, `CXX_FLAGS` and `LD_FLAGS` mean?
+  - `-fsanitize=address` enables a memory error detector which detects use-after-free and heap and stack buffer overflow.
+  - `CXX_FLAGS` are flags passed to the compiler.
+  - `LD_FLAGS` are flags passed to the linker.
 - With the new tool of the Compiler Explorer, and keeping in mind what you 
   have learned about how to use debug mode
 - What happens when you look at a `std::string` using the above methods?
+  - A std::string object is not just a raw character array, it's a class with members like a pointer to the actual character buffer, size and capacity.
 - Where is the text in your `std::string`?
+  - Dynamically allocated on the heap.
 - What is `std::optional`?
+  - It's a wrapper that may or may not contain a value.
 - How do you find out the memory layout of a `std::optional`?
+  - We can use `sizeof` and `alignof` to know the memory and padding of `std::optional`.
 - Read https://en.cppreference.com/w/cpp/memory#Smart_pointers - Guide to 
   modern C++ memory management using smart pointers
 - Which pointer types are the most important to know about?
+  - `unique_ptr`, `shared_ptr`, and `weak_ptr`.
 - Which smart pointer should you use by default if you can?
+  - `unique_ptr` because 
 - Does changing your optimization level in `CXXFLAGS` from `-O0` to `-O3` have
   any impact on the answers to any of the above questions?
+    - Changing the optimization from `-O0` (no optimization) to `-O3` (maximum optimization) reduces the assembly code (by ~10%) by inlining codes, however in the first case, it will still be shorter than the second.
 
 ## More Thinking About Performance
 
 - After your experiments with Compiler Explorer, do you have any updates for
   your answers in exercise-2?
+  - With the help of optimization, we can safely assume that creating many functions will not have a great impact on the performance and use functions whenever possible.
 
 ### Bonus: Do Not Watch Now 
 
