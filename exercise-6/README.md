@@ -42,6 +42,12 @@
   - Static: Better portability
   - Dynamic: Saves system memory when multiple programs use same library
 - How do you enable static linking or dynamic linking in your makefile?
+  - For dynamic, add 
+  ```
+  LIBS = -lspdlog -lfmt
+  ```
+  and then add `$(LIBS)` in the end of the command where compiling is done.
+  - For static linking, add `-static` flag and make sure you have .a files of the library.
 
 ## Git Clone and Building from Source
 
