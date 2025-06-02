@@ -15,6 +15,10 @@
   - Add `INC_DIRS += /usr/include/spdlog` for include path
   - Update target dependencies to include the library (add `$(LIBS)` at the end)
 - How many different ways can this library be added into your project?
+  - System-wide installation using package manager
+  - Git submodule in your project
+  - Copying source files directly into project
+  - Using a package manager like Conan or vcpkg
 - What are the tradeoffs in the different ways?
 - Why are there so many different ways to do it?
   
