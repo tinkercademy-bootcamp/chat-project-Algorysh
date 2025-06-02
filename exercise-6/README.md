@@ -20,6 +20,10 @@
   - Copying source files directly into project
   - Using a package manager like Conan or vcpkg
 - What are the tradeoffs in the different ways?
+  - System-wide: Easy to set up, but version control is harder
+  - Git submodule: Better version control, but increases repo size
+  - Source files: Complete control, but harder to update
+  - Package manager: Best practice, but adds complexity
 - Why are there so many different ways to do it?
   
 ## Static Linking vs Dynamic Linking
