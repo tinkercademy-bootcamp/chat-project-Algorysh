@@ -32,6 +32,8 @@
 ## Static Linking vs Dynamic Linking
 
 - What are the differences between static linking and dynamic linking?
+  - Static: Library code is copied into executable
+  - Dynamic: Library is loaded at runtime
 - What are the tradeoffs?
 - How do you enable static linking or dynamic linking in your makefile?
 
